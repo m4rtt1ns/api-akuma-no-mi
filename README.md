@@ -1,6 +1,6 @@
 # O Grande Catálogo das Akuma no Mi 🍎🏴‍☠️
 
-Ahoy, nakama! Este repositório é o nosso Log Pose para a jornada mais ambiciosa da Grand Line: catalogar todas as Frutas do Diabo conhecidas pelo homem. Uma API forjada com o poder do Python e a velocidade do FastAPI, pronta para desvendar os maiores segredos do mundo.
+Olá, Pirata! Este repositório é o nosso Log Pose para a jornada mais ambiciosa da Grand Line: catalogar todas as Frutas do Diabo conhecidas pelo homem. Uma API forjada com o poder do Python e a velocidade do FastAPI, pronta para desvendar os maiores segredos do mundo.
 
 O sonho de todo estudioso de Ohara, agora ao alcance de um clique!
 
