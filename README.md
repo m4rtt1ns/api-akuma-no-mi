@@ -1,69 +1,51 @@
 # O Grande Catálogo das Akuma no Mi 🍎🏴‍☠️
 
-Ahoy, nakama! Este repositório é o nosso Log Pose para a jornada mais ambiciosa da Grand Line: catalogar todas as Frutas do Diabo conhecidas pelo homem. Uma API forjada com o poder do Python e a velocidade do FastAPI, pronta para desvendar os maiores segredos do mundo.
+Ahoy, nakama! Este repositório é o nosso Log Pose para a jornada mais ambiciosa da Grand Line: catalogar todas as Frutas do Diabo conhecidas pelo homem. Uma API forjada com o poder do Python e a velocidade do FastAPI, com uma interface visual criada com Streamlit.
 
 O sonho de todo estudioso de Ohara, agora ao alcance de um clique!
 
 ## O que este Poneglyph Revela (Funcionalidades) ✨
 
-* **📜 Listar todas as Akuma no Mi conhecidas:** De Logias lendárias a Zoans míticas.
-* **🔍 Buscar os segredos de uma fruta específica:** Descubra seus usuários e poderes ocultos.
-* **✍️ Registrar uma nova fruta descoberta em suas viagens:** Contribua para o grande livro do conhecimento.
-* **💥 Atualizar os poderes e o "Despertar" de uma fruta:** O poder não tem limites, e nossa API também não!
+* **📜 API Backend:**
+    * Listagem, busca, cadastro e atualização de Akuma no Mi e Personagens.
+    * Filtros avançados por tipo e usuário.
+    * Sistema de paginação.
+    * Relacionamento de dados entre Frutas e seus usuários.
+* **👁️ Interface Frontend:**
+    * Visualização interativa de todas as Akuma no Mi cadastradas.
 
 ## As Armas Secretas do Nosso Navio (Tecnologias) ⚙️
 
-* **Python 3.11+:** A linguagem antiga que nos permite ler os Poneglyphs.
-* **FastAPI:** A velocidade de um *Gomu Gomu no Jet Pistol* para entregar os dados.
-* **Beanie ODM & MongoDB Atlas:** O Baú do Tesouro infinito e seguro na nuvem para guardar todas as nossas frutas.
-* **Uvicorn:** O vento em nossas velas que impulsiona o navio-servidor.
+* **Backend:** Python, FastAPI, Beanie ODM, MongoDB
+* **Frontend:** Streamlit, Pandas
+* **Testes:** Pytest, Pytest-Asyncio, HTTPX
+* **Servidor:** Uvicorn
 
-## O Mapa do Tesouro para a Execução 🗺️
+## Como Içar Velas (Como Rodar o Projeto) 🗺️
 
-Para iniciar sua própria jornada e usar esta API, siga o mapa:
+Este projeto agora tem duas partes: a API (backend) e a Interface Visual (frontend). Você precisará de **dois terminais** para rodar tudo.
 
-**1. Encontre o Mapa (`git clone`)**
+**1. Preparação Inicial**
+   * Clone o repositório: `git clone ...`
+   * Crie e ative o ambiente virtual: `python -m venv venv` e `.\venv\Scripts\activate`
+   * Instale a tripulação (dependências): `pip install -r requirements.txt`
+
+**2. Decifre o Poneglyph (`.env`)**
+   * Crie o arquivo `.env` na raiz do projeto e adicione suas chaves do MongoDB Atlas e do Google AI.
+
+**3. Ligar a API (Terminal 1)**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/api-akuma-no-mi.git](https://github.com/SEU_USUARIO/api-akuma-no-mi.git)
-   cd api-akuma-no-mi
-   ```
-
-**2. Prepare seu Navio (Ambiente Virtual)**
-   ```bash
-   python -m venv venv
-   # No Windows
-   .\venv\Scripts\activate
-   # No macOS/Linux
-   source venv/bin/activate
-   ```
-
-**3. Reúna sua Tripulação (Instalar Dependências)**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-**4. Decifre o Poneglyph (Arquivo `.env`)**
-   - Crie um arquivo `.env` na pasta principal.
-   - Adicione suas chaves secretas, que são o verdadeiro tesouro:
-     ```ini
-     MONGO_DATABASE_URL="sua_string_de_conexao_do_atlas"
-     DATABASE_NAME="akuma_db"
-     GOOGLE_API_KEY="sua_chave_do_google_ai"
-     ```
-
-**5. Içar Velas! (Ligar o Servidor)**
-   ```bash
+   # Com o ambiente virtual ativado
    uvicorn app.main:app --reload
    ```
+   * *Sua API estará disponível em `http://127.0.0.1:8000`*
 
-**6. Consulte seu Log Pose (Documentação)**
-   - Com o navio navegando, aponte sua bússola para `http://127.0.0.1:8000/docs` para ver todas as rotas e testar os poderes da API.
-
-## Próximos Destinos no Novo Mundo (Futuras Features) 🌊
-
-* Adicionar imagens de todas as frutas.
-* Criar um sistema de busca por usuário para encontrar todos os seus poderes.
-* Implementar o script do Gemini para buscar informações automaticamente, como um Den Den Mushi superinteligente!
+**4. Ligar o Frontend (Terminal 2)**
+   ```bash
+   # Abra um segundo terminal e ative o ambiente virtual
+   streamlit run frontend.py
+   ```
+   * *Sua interface visual abrirá no seu navegador em `http://localhost:8501`*
 
 ---
 

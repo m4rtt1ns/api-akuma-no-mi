@@ -1,4 +1,3 @@
-# scripts/gemini_updater.py
 import google.generativeai as genai
 import os
 import requests

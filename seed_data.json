@@ -1,0 +1,50 @@
+{
+  "personagens": [
+    {
+      "nome": "Monkey D. Luffy",
+      "bando": "Piratas do Chapéu de Palha",
+      "recompensa": 3000000000,
+      "descricao": "Capitão dos Piratas do Chapéu de Palha e um dos Quatro Imperadores do Mar (Yonkou)."
+    },
+    {
+      "nome": "Edward Newgate",
+      "bando": "Piratas do Barba Branca",
+      "recompensa": 5046000000,
+      "descricao": "Mais conhecido como Barba Branca, foi o capitão dos Piratas do Barba Branca e usuário da Gura Gura no Mi."
+    },
+    {
+        "nome": "Trafalgar D. Water Law",
+        "bando": "Piratas do Coração",
+        "recompensa": 3000000000,
+        "descricao": "Capitão e médico dos Piratas do Coração, conhecido como o 'Cirurgião da Morte'."
+    }
+  ],
+  "akuma_no_mi": [
+    {
+      "nome_romanizado": "Hito Hito no Mi, Model: Nika",
+      "nome_br": "Fruta do Humano, Modelo: Nika",
+      "tipo": "Zoan",
+      "descricao": "Uma Akuma no Mi do tipo Zoan Mítica que concede ao corpo do usuário as propriedades da borracha.",
+      "niveis_de_poder": { "dominio_basico": ["Gomu Gomu no Pistol"] }
+    },
+    {
+      "nome_romanizado": "Gura Gura no Mi",
+      "nome_br": "Fruta do Terremoto",
+      "tipo": "Paramecia",
+      "descricao": "Permite ao usuário criar vibrações ou 'terremotos', com o poder de destruir o mundo.",
+      "niveis_de_poder": { "dominio_basico": ["Quebrar o ar com socos"] }
+    },
+    {
+        "nome_romanizado": "Ope Ope no Mi",
+        "nome_br": "Fruta da Operação",
+        "tipo": "Paramecia",
+        "descricao": "Permite ao usuário criar um espaço esférico (ROOM) onde ele tem controle absoluto.",
+        "niveis_de_poder": { "dominio_basico": ["ROOM", "Shambles"] }
+    }
+  ],
+  "associacoes": [
+      { "personagem": "Monkey D. Luffy", "fruta": "Hito Hito no Mi, Model: Nika" },
+      { "personagem": "Edward Newgate", "fruta": "Gura Gura no Mi" },
+      { "personagem": "Trafalgar D. Water Law", "fruta": "Ope Ope no Mi" }
+  ]
+}

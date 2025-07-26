@@ -3,7 +3,7 @@
 
 # Pasta do ambiente virtual do Python
 venv/
-op/ # Vi que você tinha uma pasta 'op', provavelmente do venv
+tc/ # Vi que você tinha uma pasta 'tc', provavelmente do venv
 
 # Arquivos gerados pelo Python
 __pycache__/
